@@ -21,7 +21,7 @@ public class LekkiProperty {
 
     }
 
-    public Long getPropertyID() {
+    public Long getPropertyId() {
         return propertyId;
     }
 
