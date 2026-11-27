@@ -1,17 +1,17 @@
-package com.dufuna.berlin.admin.model;
+package com.dufuna.berlin.ogooluwaakinleye.model;
 
 import java.time.LocalDate;
 import java.util.Objects;
 
 public class LekkiProperty {
-    private Long propertyID;
+    private Long propertyId;
     private String address;
     private String type;
-    private int numberofBedrooms;
-    private int numberofSittingRooms;
-    private int numberofKitchens;
-    private int numberofBathtrooms;
-    private int numberofToilets;
+    private int numberOfBedrooms;
+    private int numberOfSittingRooms;
+    private int numberOfKitchens;
+    private int numberOfBathtrooms;
+    private int numberOfToilets;
     private String owner;
     private String description;
     private LocalDate validFrom;
@@ -22,11 +22,11 @@ public class LekkiProperty {
     }
 
     public Long getPropertyID() {
-        return propertyID;
+        return propertyId;
     }
 
-    public void setPropertyID(Long propertyID) {
-        this.propertyID = propertyID;
+    public void setPropertyID(Long propertyId) {
+        this.propertyId = propertyId;
     }
 
     public String getAddress() {
@@ -46,43 +46,43 @@ public class LekkiProperty {
     }
 
     public int getNumberofBedrooms() {
-        return numberofBedrooms;
+        return numberOfBedrooms;
     }
 
-    public void setNumberofBedrooms(int numberofBedrooms) {
-        this.numberofBedrooms = numberofBedrooms;
+    public void setNumberofBedrooms(int numberOfBedrooms) {
+        this.numberOfBedrooms = numberOfBedrooms;
     }
 
     public int getNumberofSittingRooms() {
-        return numberofSittingRooms;
+        return numberOfSittingRooms;
     }
 
-    public void setNumberofSittingRooms(int numberofSittingRooms) {
-        this.numberofSittingRooms = numberofSittingRooms;
+    public void setNumberofSittingRooms(int numberOfSittingRooms) {
+        this.numberOfSittingRooms = numberOfSittingRooms;
     }
 
     public int getNumberofKitchens() {
-        return numberofKitchens;
+        return numberOfKitchens;
     }
 
-    public void setNumberofKitchens(int numberofKitchens) {
-        this.numberofKitchens = numberofKitchens;
+    public void setNumberofKitchens(int numberOfKitchens) {
+        this.numberOfKitchens = numberOfKitchens;
     }
 
     public int getNumberofBathtrooms() {
-        return numberofBathtrooms;
+        return numberOfBathtrooms;
     }
 
-    public void setNumberofBathtrooms(int numberofBathtrooms) {
-        this.numberofBathtrooms = numberofBathtrooms;
+    public void setNumberofBathtrooms(int numberOfBathtrooms) {
+        this.numberOfBathtrooms = numberOfBathtrooms;
     }
 
     public int getNumberofToilets() {
-        return numberofToilets;
+        return numberOfToilets;
     }
 
-    public void setNumberofToilets(int numberofToilets) {
-        this.numberofToilets = numberofToilets;
+    public void setNumberofToilets(int numberOfToilets) {
+        this.numberOfToilets = numberOfToilets;
     }
 
     public String getOwner() {
@@ -117,16 +117,17 @@ public class LekkiProperty {
         this.validTo = validTo;
     }
 
+    @Override
     public String toString() {
         return "LekkiProperty{" +
-                "propertyID=" + propertyID +
+                "propertyID=" + propertyId +
                 ", address='" + address + '\'' +
                 ", type='" + type + '\'' +
-                ", numberofBedrooms=" + numberofBedrooms +
-                ", numberofSittingRooms=" + numberofSittingRooms +
-                ", numberofKitchens=" + numberofKitchens +
-                ", numberofBathtrooms=" + numberofBathtrooms +
-                ", numberofToilets=" + numberofToilets +
+                ", numberOfBedrooms=" + numberOfBedrooms +
+                ", numberofSittingRooms=" + numberOfSittingRooms +
+                ", numberOfKitchens=" + numberOfKitchens +
+                ", numberOfBathtrooms=" + numberOfBathtrooms +
+                ", numberOfToilets=" + numberOfToilets +
                 ", owner='" + owner + '\'' +
                 ", description='" + description + '\'' +
                 ", validFrom=" + validFrom +
@@ -136,13 +137,14 @@ public class LekkiProperty {
 
     @Override
     public boolean equals(Object o) {
+        if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         LekkiProperty that = (LekkiProperty) o;
-        return Objects.equals(propertyID, that.propertyID);
+        return Objects.equals(propertyId, that.propertyId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(propertyID);
+        return Objects.hashCode(propertyId);
     }
 }

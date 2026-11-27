@@ -1,5 +1,4 @@
-
-package com.dufuna.berlin.admin.address;
+package com.dufuna.berlin.ogooluwaakinleye.address;
 
 public class AddressApp {
 

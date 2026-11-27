@@ -1,6 +1,6 @@
-package com.dufuna.berlin.admin.service;
+package com.dufuna.berlin.ogooluwaakinleye.service;
 
-import com.dufuna.berlin.admin.model.LekkiProperty;
+import com.dufuna.berlin.ogooluwaakinleye.model.LekkiProperty;
 
 public class MockLekkiPropertyService implements LekkiPropertyService {
 
@@ -13,7 +13,7 @@ public class MockLekkiPropertyService implements LekkiPropertyService {
     }
 
     @Override
-    public LekkiProperty getProperty(Long propertyID) {
+    public LekkiProperty getProperty(Long properyId) {
         System.out.println("MockLekkiPropertyService.getProperty called");
         return property;
     }
